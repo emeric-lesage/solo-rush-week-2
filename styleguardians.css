@@ -1,0 +1,78 @@
+:root {
+  --background-color: #1d1e2cff;
+  --primary-color: #21295cff;
+  --secondary-color: #b5c2b7ff;
+  --tertiary-color: #3c6e71ff;
+  --h1police: ;
+  --h2police: ;
+  --ppolice: ;
+}
+/* CSS HEX
+--caribbean-current: #3c6e71ff;
+--ash-gray: #b5c2b7ff;
+--mountbatten-pink: #987284ff;
+--space-cadet: #21295cff;
+--raisin-black: #1d1e2cff;
+  */
+
+body {
+  background-color: var(--background-color);
+}
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+header > .off-page-link {
+  text-align: center;
+  font-size: 200%;
+  width: 50%;
+  color: #a306b6;
+  margin: 5%;
+}
+nav {
+  position: fixed;
+  width: 99%;
+  bottom: 0;
+  background-color: var(--secondary-color);
+  border-radius: 1rem;
+}
+/* Desktop >>>>> */
+@media screen and (width >= 1024px) {
+  nav {
+    position: sticky;
+    top: 0;
+  }
+}
+/* <<<<<<< Desktop */
+
+nav > ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  padding: 0;
+  background-color: var(--secondary-color);
+}
+nav ul li {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+}
+h1 {
+  font-family: ;
+  font-size: ;
+  color: white;
+  padding-left: 5%;
+}
+h2 {
+  font-family: ;
+  font-size: ;
+  color: white;
+  padding-left: 10%;
+}
+p {
+  font-family: ;
+  font-size: ;
+  color: white;
+  padding-left: 20%;
+}

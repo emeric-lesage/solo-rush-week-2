@@ -1,0 +1,132 @@
+:root {
+  --background-color: #1d1e2cff;
+  --primary-color: #21295cff;
+  --secondary-color: #b5c2b7ff;
+  --tertiary-color: #3c6e71ff;
+  --h1police: ;
+  --h2police: ;
+  --ppolice: ;
+}
+/* CSS HEX
+--caribbean-current: #3c6e71ff;
+--ash-gray: #b5c2b7ff;
+--mountbatten-pink: #987284ff;
+--space-cadet: #21295cff;
+--raisin-black: #1d1e2cff;
+  */
+
+body {
+  background-color: var(--background-color);
+}
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+header > .off-page-link {
+  text-align: center;
+  font-size: 200%;
+  width: 50%;
+  color: #a306b6;
+  margin: 5%;
+}
+nav {
+  position: fixed;
+  width: 99%;
+  bottom: 0;
+  background-color: var(--secondary-color);
+  border-radius: 1rem;
+}
+/* Desktop >>>>> */
+@media screen and (width >= 1024px) {
+  nav {
+    position: sticky;
+    top: 0;
+  }
+}
+/* <<<<<<< Desktop */
+
+nav > ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  padding: 0;
+  background-color: var(--secondary-color);
+}
+nav ul li {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+}
+
+.first-img {
+  display: none;
+}
+/* Desktop >>>>>> */
+@media screen and (width >= 1024px) {
+  .first-img {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+  }
+  .main-content {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .main-text > p {
+    padding: 2%;
+    margin: 2%;
+  }
+}
+/* <<<<<<<<< Desktop */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+/* Desktop >>>>>>> */
+@media screen and (width >= 1024px) {
+  main {
+    margin-top: 40px;
+  }
+}
+/* <<<<<<<<<< Desktop */
+.main-title {
+  text-align: center;
+}
+.main-text {
+  width: 80%;
+}
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+p {
+  padding: 0;
+  margin: 2rem;
+}
+/* Desktop >>>>>>>>> */
+@media screen and (width >= 1024px) {
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .main-title {
+    width: 100%;
+  }
+}
+/* <<<<<<<<<<< Desktop */
+footer ul {
+  display: flex;
+  justify-content: space-between;
+}
+footer ul li {
+  color: white;
+  display: inline;
+  list-style-type: none;
+}
